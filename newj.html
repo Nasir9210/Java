@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<center>
+<font color="green">
+<html lang="en">
+<head>
+    <background color="yellow">
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="validation.js"></script>
+</head>
+<body color="red">
+    <text-alinement="centre"</text-alinement>
+<form name="contactForm" onsubmit="return validateForm()" action="confirmation.php" method="post">
+    <h2>Application Form</h2>
+    <div class="row">
+        <label>Full Name</label>
+        <input type="text" name="name">
+        <div class="error" id="nameErr"></div>
+    </div>
+    <div class="row">
+        <label>S/O/D/O/W/O</label>
+        <input type="text" name="name">
+        <div class="error" id="nameErr"></div>
+    </div>
+    <div class="row">
+        <label>Email Address</label>
+        <input type="text" name="email">
+        <div class="error" id="emailErr"></div>
+    </div>
+    <div class="row">
+        <label>Mobile Number</label>
+        <input type="text" name="mobile" maxlength="10">
+        <div class="error" id="mobileErr"></div>
+    </div>
+    <div class="row">
+        <label>State</label>
+        <select name="state">
+            <option>Select</option>
+            <option>J&K</option>
+            <option>Delhi</option>
+            <option>Mumbai</option>
+            <option>Punjab</option>
+            <option>Kerala</option>
+        </select> 
+        <div class="error" id="stateErr"></div>
+    </div>
+    <div class="row">
+        <label>Gender</label>
+        <div class="form-inline">
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label><input type="radio" name="gender" value="other"> Other</label>
+        </div>
+        <div class="error" id="genderErr"></div>
+    </div>
+    <div class="row">
+        <label>Hobbies <i>(Optional)</i></label>
+        <div class="form-inline">
+            <label><input type="checkbox" name="Habits[]" value="playing cricket"> Sports</label>
+            <label><input type="checkbox" name="Habits[]" value="eating">Gardening</label>
+            <label><input type="checkbox" name="Habits[]" value="listening music">listening Music</label>  
+        </div>
+    </div>        
+    <div class="row">
+        <input type="button" value="Submmit">
+    </div>
+
+</form>
+</center>
+</body>
+</html>
